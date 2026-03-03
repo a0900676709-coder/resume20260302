@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>個人履歷 - 亞洲大學學生</title>
+
+<style>
+body{
+    margin:0;
+    font-family: "Noto Sans TC", sans-serif;
+    background: linear-gradient(135deg,#f8f9fa,#e3f2fd);
+    color:#333;
+}
+
+.container{
+    max-width:900px;
+    margin:40px auto;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+header h1{
+    margin:0;
+    font-size:32px;
+}
+
+header p{
+    color:#666;
+}
+
+.section{
+    margin-bottom:25px;
+}
+
+.section h2{
+    border-left:5px solid #2196f3;
+    padding-left:10px;
+    margin-bottom:10px;
+}
+
+.skill-bar{
+    background:#eee;
+    border-radius:20px;
+    overflow:hidden;
+    margin:8px 0;
+}
+
+.skill-level{
+    height:15px;
+    background:#2196f3;
+    width:0;
+    transition:1s;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    background:#2196f3;
+    color:white;
+    border-radius:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0d47a1;
+}
+
+.footer{
+    text-align:center;
+    margin-top:30px;
+    font-size:14px;
+    color:#888;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <h1>你的姓名</h1>
+    <p>亞洲大學 學生 | 學號：114054015</p>
+</header>
+
+<div class="section">
+    <h2>個人簡介</h2>
+    <p>
+        我是亞洲大學學生，對設計與創意領域充滿熱情。
+        擅長視覺美感與專案規劃，具備良好的團隊合作能力與學習態度。
+    </p>
+</div>
+
+<div class="section">
+    <h2>學歷</h2>
+    <p>亞洲大學 ｜ 就讀中</p>
+</div>
+
+<div class="section">
+    <h2>技能專長</h2>
+
+    <p>HTML</p>
+    <div class="skill-bar">
+        <div class="skill-level" id="html"></div>
+    </div>
+
+    <p>CSS</p>
+    <div class="skill-bar">
+        <div class="skill-level" id="css"></div>
+    </div>
+
+    <p>JavaScript</p>
+    <div class="skill-bar">
+        <div class="skill-level" id="js"></div>
+    </div>
+
+</div>
+
+<div class="section">
+    <h2>專案經驗</h2>
+    <ul>
+        <li>校內設計專題製作</li>
+        <li>品牌企劃與視覺設計專案</li>
+        <li>永續時尚提案發表</li>
+    </ul>
+</div>
+
+<div style="text-align:center;">
+    <button onclick="showMessage()">聯絡我</button>
+</div>
+
+<div class="footer">
+    © 2026 亞洲大學學生 114054015
+</div>
+
+</div>
+
+<script>
+// 技能條動畫
+window.onload = function(){
+    document.getElementById("html").style.width = "85%";
+    document.getElementById("css").style.width = "80%";
+    document.getElementById("js").style.width = "70%";
+}
+
+// 按鈕互動
+function showMessage(){
+    alert("感謝您查看我的履歷，期待與您聯繫！");
+}
+</script>
+
+</body>
+</html>
